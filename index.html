@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="tangled_style.css" />
+  <title>HAPPY BIRTHDAY YSA</title>
+</head>
+
+<body>
+  <div class="flipbook">
+
+    <!-- 1: Front Cover -->
+    <div class="hard cover-front">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+      <h1>HAPPY BIRTHDAY<br>YSABEL</h1>
+      <div class="cover-divider"></div>
+      <p class="subtitle">18th Year</p>
+      <small class="author">Opening Box of Adepti Tricks</small>
+    </div>
+
+    <!-- 2: Hard blank (inner front) -->
+    <div class="hard"></div>
+
+    <!-- 3 -->
+    <div class="page">
+      <div class="page-inner">
+      <img src="images/lantern.jpg" alt="Sun Lantern" style="width:350px; height:350px; display:block; margin:0 auto;"/>       
+        <small>Once upon a time...</small>
+      </div>
+    </div>
+
+
+    <!-- 4 -->
+    <div class="page">
+      <div class="page-inner">
+        <img src="images/sky.png" alt="Sky" style="width:350px; height:350px; display:block; margin:0 auto;"/>
+        <small>A single drop of sunlight<br>
+          fell from the heavens.</small>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="page">
+      <div class="page-inner">
+        <img src="images/ysasun.png" alt="Sun" style="width:350px; height:350px; display:block; margin:0 auto;"/>
+        <small>And from this small drop of sun</small>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="page">
+      <div class="page-inner">
+        <img src="images/flower.png" alt="Flower" style="width:350px; height:350px; display:block; margin:0 auto;"/>
+        <small>Grew a magic golden flower</small>
+      </div>
+    </div>
+
+    <!-- 11: Hard blank (inner back) -->
+    <div class="hard"></div>
+
+    <!-- 12: Back Cover -->
+    <div class="hard cover-back">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+      <img src="images/tangled.png" alt="Tangled" style="width:350px; height:350px; display:block; margin:0 auto;"/>
+      <small> Flower, gleam and glow<br>
+Let your power shine<br>
+Make the clock reverse<br>
+Bring back what once was mine</small>
+    </div>
+
+  </div>
+
+  <!-- Flipbook scripts -->
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  <script>
+    $(".flipbook").turn({
+      width: 1000,
+      height: 600,
+      autoCenter: true
+    });
+  </script>
+</body>
+
+</html>
+
+
